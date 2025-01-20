@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>          
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Out Addiction</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>adicciones</h1>
-    <img src="lions-577104_640.jpg" alt="León">
+  <header>
+    <img src="logotip.svg" alt="">
+    <h1>Out Addiction</h1>
+  </header>
+  <main>
+    <section id="video">
+      <h2>El nostre vídeo</h2>
+      <iframe src="URL_DEL_VIDEO" allowfullscreen></iframe>
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+    </section>
+    <section id="informacio">
+      <h2>Sobre el vídeo</h2>
+      <p>El vídeo tracta de les adiccions</p>
+    </section>
+    <section id="musica">
+      <h2>Música de fons</h2>
+      <audio controls>
+        <source src="musica.mp3" type="audio/mpeg">
+      </audio>
+      <p>Música: "Out Addiction"</p>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacte">
+      <h2>Contacte'ns</h2>
+      <div class="contact-form-container">
+        <form action="#" method="post" class="contact-form">
+          <label for="nom">Nom:</label>
+          <input type="text" id="nom" name="nom" required>
+
+          <label for="correu">Correu electrònic:</label>
+          <input type="email" id="correu" name="correu" required>
+
+          <label for="telefon">Telèfon:</label>
+          <input type="tel" id="telefon" name="telefon" required>
+
+          <label for="missatge">Missatge:</label>
+          <textarea id="missatge" name="missatge" rows="5" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Out Addiction</p>
+  </footer>
 </body>
 </html>
