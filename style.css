@@ -10,33 +10,59 @@ body {
   justify-content: center;
   min-height: 100vh;
   text-align: center;
-  background: linear-gradient(to bottom, #0077be, #00aaff); /* Degradado azul como el mar */
+  background: linear-gradient(to bottom, #0077be, #00aaff); /* Fondo degradado azul como el mar */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: #fff; /* Cambia el color del texto para que sea legible */
+  color: #fff; /* Color del texto legible sobre el fondo */
 }
 
-header, footer {
+header {
   text-align: center;
-  background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-  color: #fff;
-  padding: 1em 0;
+  background-color: #ffd6d6; /* Fondo rojo claro */
+  color: #333; /* Texto oscuro para contraste */
+  padding: 20px 0;
   width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar el header */
+}
+
+header .logo {
+  max-width: 80Px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333; /* Mantén el color oscuro para el título */
 }
 
 main {
   width: 100%;
   max-width: 1200px;
-  padding: 1em;
+  padding: 20px;
   box-sizing: border-box;
 }
 
+/* Estilos para secciones de video y audio */
 iframe, video {
   width: 100%;
   max-width: 600px;
-  margin: 1em auto;
+  margin: 20px auto; /* Añade espacio entre los elementos */
   display: block;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+section {
+  margin-bottom: 40px; /* Espacio entre secciones */
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 /* Estilos del formulario de contacto */
@@ -47,21 +73,8 @@ iframe, video {
   background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
   color: #333; /* Texto oscuro para contraste */
-}
-
-h1, h2 {
-  text-align: center;
-  color: #fff;
-}
-
-h1 {
-  margin-bottom: 10px;
-}
-
-h2 {
-  margin-bottom: 20px;
 }
 
 .contact-form {
@@ -100,11 +113,23 @@ button {
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #45a049;
 }
+
+/* Pie de página */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Sombra superior */
+}
+
 
   
