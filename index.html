@@ -7,33 +7,76 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Encabezado -->
   <header>
-    <img class="logo" src="logo.svg" alt="Logo Out Addiction">
-    <h1>Out Addiction</h1>
-    <!-- Menú de navegación -->
-    <nav>
-      <ul>
-        <li><a href="#inici" class="button-link">Inici</a></li>
-        <li><a href="#sobre-nosaltres" class="button-link">Sobre Nosaltres</a></li>
-        <li><a href="#contacte" class="button-link">Contacte'ns</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo-container">
+        <img class="logo" src="logo.svg" alt="Logo Out Addiction">
+        <h1>Out Addiction</h1>
+      </div>
+
+      <!-- Menú de navegación -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#inici">Inici</a></li>
+          <li><a href="#sobre-nosaltres">Sobre Nosaltres</a></li>
+          <li><a href="#contacte">Contacte'ns</a></li>
+        </ul>
+      </nav>
+
+      <!-- Buscador -->
+      <form class="search-bar" action="https://www.google.com/search" method="get" target="_blank">
+        <input 
+          type="text" 
+          name="q" 
+          placeholder="Buscar informació..." 
+          required 
+          list="adicciones-links"
+        />
+        <datalist id="adicciones-links">
+          <option value="Adicciones - Clinic Barcelona: https://www.clinicbarcelona.org/asistencia/enfermedades/adicciones"></option>
+          <option value="Adicciones - PNSD Sanidad: https://pnsd.sanidad.gob.es/profesionales/sistemasInformacion/home.htm"></option>
+          <option value="Adicciones - adicciones.es: https://www.adicciones.es/index.php/adicciones"></option>
+        </datalist>
+        <button type="submit">Buscar</button>
+      </form>
+
+      <!-- Botones de Sign In y Sign Up -->
+      <div class="auth-buttons">
+        <a href="#" class="button-auth">Sign In</a>
+        <a href="#" class="button-auth primary">Sign Up</a>
+      </div>
+    </div>
   </header>
 
+  <!-- Contenido principal -->
   <main>
     <!-- Sección "Inici" -->
     <section id="inici">
       <h2>El nostre vídeo</h2>
-      <iframe width="1236" height="695" src="https://www.youtube.com/embed/1zYwZVJl7Yo" title="Les Adiccions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="1236" height="695" src="https://www.youtube.com/embed/1zYwZVJl7Yo" 
+        title="Les Adiccions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+
+      <!-- Sección "Sobre Nosaltres" -->
+      <section id="sobre-nosaltres">
+        <h2>Sobre nosaltres</h2>
+        <p>El vídeo tracta de les adiccions i la nostra missió per ajudar a les persones a superar-les.</p>
+      </section>
+
       <video controls>
         <source src="video.mp4" type="video/mp4">
+        El teu navegador no admet el vídeo HTML5.
       </video>
-    </section>
-
-    <!-- Sección "Sobre Nosaltres" -->
-    <section id="sobre-nosaltres">
-      <h2>Sobre nosaltres</h2>
-      <p>El vídeo tracta de les adiccions i la nostra missió per ajudar a les persones a superar-les.</p>
+      
+      <!-- Audio -->
+      <h2>Escolta el nostre àudio</h2>
+      <audio controls>
+        <source src="musicafondo.mp3" type="audio/mpeg">
+        El teu navegador no admet l'àudio HTML5.
+      </audio>
     </section>
 
     <!-- Sección "Contacte'ns" -->
@@ -59,10 +102,17 @@
     </section>
   </main>
 
+  <!-- Pie de página -->
   <footer>
     <p>&copy; 2025 Out Addiction</p>
     <p>Origen: Pixabay</p>
   </footer>
 </body>
 </html>
+
+
+
+
+
+
 
