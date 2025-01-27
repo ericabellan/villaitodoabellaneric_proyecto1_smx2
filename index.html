@@ -8,30 +8,35 @@
 </head>
 <body>
   <header>
-    <img class="logo"    src="/imagenes/logo.svg" alt="">
+    <img class="logo" src="/imagenes/logo.svg" alt="Logo Out Addiction">
     <h1>Out Addiction</h1>
+    <!-- Menú de navegación -->
+    <nav>
+      <ul>
+        <li><a href="#inici" class="button-link">Inici</a></li>
+        <li><a href="#sobre-nosaltres" class="button-link">Sobre Nosaltres</a></li>
+        <li><a href="#contacte" class="button-link">Contacte'ns</a></li>
+      </ul>
+    </nav>
   </header>
+
   <main>
-    <section id="video">
+    <!-- Sección "Inici" -->
+    <section id="inici">
       <h2>El nostre vídeo</h2>
       <iframe width="1236" height="695" src="https://www.youtube.com/embed/1zYwZVJl7Yo" title="Les Adiccions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <video controls>
         <source src="video.mp4" type="video/mp4">
       </video>
     </section>
-    <section id="informacio">
-      <h2>Sobre el vídeo</h2>
-      <p>El vídeo tracta de les adiccions</p>
-    </section>
-    <section id="musica">
-      <h2>Música de fons</h2>
-      <audio controls>
-        <source src="musicafondo.mp3" type="audio/mpeg">
-      </audio>
-      <p>Música: "Out Addiction"</p>
+
+    <!-- Sección "Sobre Nosaltres" -->
+    <section id="sobre-nosaltres">
+      <h2>Sobre nosaltres</h2>
+      <p>El vídeo tracta de les adiccions i la nostra missió per ajudar a les persones a superar-les.</p>
     </section>
 
-    <!-- Sección de contacto -->
+    <!-- Sección "Contacte'ns" -->
     <section id="contacte">
       <h2>Contacte'ns</h2>
       <div class="contact-form-container">
@@ -53,8 +58,10 @@
       </div>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Out Addiction</p>
   </footer>
 </body>
 </html>
+
